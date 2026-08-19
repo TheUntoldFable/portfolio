@@ -54,3 +54,9 @@ CMS without touching a component.
 
 Source is public so the site can be read as a work sample. The written content, CV
 details, and photograph are not licensed for reuse.
+
+## Deployment
+
+Production: https://tsvetomir-uzunoff.vercel.app
+
+Pushes to `main` deploy automatically via Vercel.
