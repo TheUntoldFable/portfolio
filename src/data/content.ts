@@ -4,6 +4,8 @@ export type ExperienceItem = {
   type: string;
   copy: string;
   demoAvailable?: boolean;
+  /** When set, the row becomes a link out to the live product. */
+  url?: string;
 };
 
 /** Employer sub-heading shown above the first item of each group. */
@@ -85,6 +87,7 @@ export const experience: ExperienceItem[] = [
     employer: 'Own products',
     name: 'Barbershop Premium',
     type: 'Designer & sole engineer · 2026 · live',
+    url: 'https://barbershop-premium-inky.vercel.app/',
     copy: 'A booking site for a Sofia barbershop, designed and built solo. A requested hour is held for ten minutes by the Convex scheduler and offered to the shop phone over the Viber Bot API with approve and decline buttons; accepting keeps the hour and emails the customer a calendar invite through Resend, while a decline or silence returns it to the grid. Built with Next.js 16, React 19, Convex in the EU region, and 75 Vitest and convex-test suites.',
   },
 ];
@@ -118,7 +121,7 @@ export const toolkit = [
   'Playwright',
 ];
 
-export const offTheClock = ['Travel', 'DJing', 'Architecture', 'Good coffee'];
+export const offTheClock = ['Music', 'Travel', 'Chess', 'Running'];
 
 export const contact = {
   email: 'tsvetomir.uzunoff@gmail.com',
