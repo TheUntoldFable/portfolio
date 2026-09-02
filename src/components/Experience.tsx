@@ -44,8 +44,27 @@ export function Experience() {
                     </div>
                   </div>
                   <div className="work-description">{item.copy}</div>
-                  <div className="work-arrow" aria-hidden="true">
-                    ↗
+                  {/* Only a row that actually goes somewhere gets the
+                      affordance — the bare arrow used to sit on every row and
+                      promise a link that wasn't there. */}
+                  <div className="work-arrow">
+                    {item.url && (
+                      <span className="work-link">
+                        <span className="work-link-label">Visit</span>
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path d="M7 17 17 7" />
+                          <path d="M8 7h9v9" />
+                        </svg>
+                      </span>
+                    )}
                   </div>
                 </>
               );
