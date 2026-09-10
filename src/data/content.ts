@@ -80,7 +80,7 @@ export const experience: ExperienceItem[] = [
   {
     employer: 'Own products',
     name: 'ChargeMe',
-    type: 'Co-founder & frontend lead · 2024 — Present · live',
+    type: 'Co-founder & frontend lead · 2024 — 2026 · live',
     copy: 'A mobile-first restaurant menu and ordering product: scan a table code, browse, order, pay by card, and follow live order status. Built with Next.js, Tailwind, Zustand, TanStack Query, STOMP/WebSockets, Stripe, geofenced ordering, and bilingual BG/EN support.',
   },
   {
